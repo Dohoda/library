@@ -117,3 +117,9 @@ newBookButton.addEventListener("click",function(e){
     dialog.show();
     
 });
+
+// Button that resets the library.
+
+resetLibraryButton.addEventListener("click",function(){
+    container.innerHTML = "";
+});
