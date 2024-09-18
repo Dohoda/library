@@ -59,7 +59,7 @@ newBookButton.addEventListener("click",function(e){
     // For page input and label.
 
     const labelPages = document.createElement("label");
-    labelPages.setAttribute("for","inputPages")
+    labelPages.setAttribute("for","inputPages");
     labelPages.textContent = "Number of Pages:";
     form.appendChild(labelPages);
 
@@ -77,7 +77,6 @@ newBookButton.addEventListener("click",function(e){
     const inputCheck = document.createElement("input");
     inputCheck.setAttribute("type","radio");
     inputCheck.setAttribute("id","checkYes");
-    inputCheck.setAttribute("value","Yes");
     optionContainer.appendChild(inputCheck);
 
     const labelCheck = document.createElement("label");
