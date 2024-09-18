@@ -76,6 +76,19 @@ form label + input, input + label {
     margin-top: 15px;
 }
 
+.cancelButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: red;
+    background-color: aquamarine;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 button:hover{
     opacity: 0.9;
     border: 2px solid gray;

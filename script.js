@@ -92,6 +92,13 @@ newBookButton.addEventListener("click",function(e){
     formButtonConfirm.textContent = "Add Book";
     form.appendChild(formButtonConfirm);
 
+    // For cancel button.
+
+    const formButtonCancel = document.createElement("button");
+    formButtonCancel.classList.add("cancelButton");
+    formButtonCancel.textContent = "X";
+    form.appendChild(formButtonCancel);
+
     formButtonConfirm.addEventListener("click",function(e){
         e.preventDefault();
         title = inputTitle.value;
