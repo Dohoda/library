@@ -1,3 +1,5 @@
+/* styling main things */
+
 body{
     padding: 1rem;
     margin: 0;
@@ -13,7 +15,7 @@ body{
     gap: 5rem;
 }
 
-button{
+.newBook,.resetLibrary{
     width: 225px;
     height: 60px;
     background-color:aquamarine;
@@ -32,4 +34,44 @@ button{
     box-shadow: 3px 3px rgba(128, 128, 128, 0.3);
     border: 1px solid gray;
     margin-top: 1rem;
+}
+
+/* Styling things added by js */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label,input{
+    font-size: 18px;
+    
+}
+
+form label + input, input + label {
+    margin-top: 5px;
+}
+
+.optionContainer{
+    margin-top: 10px;
+}
+
+#checkYes{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+#inputPages{
+    width: 50px;
+}
+
+.confirmButton{
+    width: 90px;
+    height: 30px;
+    border-radius: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: aquamarine;
+    margin-top: 15px;
 }
