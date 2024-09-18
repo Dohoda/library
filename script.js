@@ -97,6 +97,8 @@ newBookButton.addEventListener("click",function(e){
         e.preventDefault();
         title = inputTitle.value;
         author = inputAuthor.value;
+        pages = inputPages.value;
+        checkRead = inputCheck.value;
         dialog.close();
 
     });
