@@ -109,6 +109,11 @@ newBookButton.addEventListener("click",function(e){
 
     });
 
+    formButtonCancel.addEventListener("click",function(e){
+        e.preventDefault();
+        dialog.close();
+    });
+
     dialog.show();
     
 });
