@@ -75,3 +75,8 @@ form label + input, input + label {
     background-color: aquamarine;
     margin-top: 15px;
 }
+
+button:hover{
+    opacity: 0.9;
+    border: 2px solid gray;
+}
