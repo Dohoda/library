@@ -111,7 +111,7 @@ newBookButton.addEventListener("click",function(e){
         else{
             checkRead = false;
         }
-        
+
         dialog.close();
 
     });
