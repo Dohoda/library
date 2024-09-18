@@ -77,6 +77,7 @@ newBookButton.addEventListener("click",function(e){
     const inputCheck = document.createElement("input");
     inputCheck.setAttribute("type","radio");
     inputCheck.setAttribute("id","checkYes");
+    inputCheck.setAttribute("value","false");
     optionContainer.appendChild(inputCheck);
 
     const labelCheck = document.createElement("label");
@@ -104,8 +105,14 @@ newBookButton.addEventListener("click",function(e){
         title = inputTitle.value;
         author = inputAuthor.value;
         pages = inputPages.value;
-        checkRead = inputCheck.value;
+        if(inputCheck.checked == true ){
+            checkRead = true;
+        }
+        else{
+            checkRead = false;
+        }
         dialog.close();
+        console.log(checkRead);
 
     });
 
