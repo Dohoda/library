@@ -2,13 +2,17 @@
 
 const myLibrary = [];
 
-function Book() {};
-
-function addBookToLibrary(title,author,pages,checkRead) {
+function Book(title,author,pages,checkRead) {
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.checkRead = checkRead;
+    this.checkRead = checkRead
+};
+
+function addBookToLibrary(title,author,pages,checkRead) {
+
+    
+
 };
 
 // Main Buttons and container
@@ -112,10 +116,12 @@ newBookButton.addEventListener("click",function(e){
             checkRead = "the book is not read.";
         }
 
+        const book = new Book(title,author,pages,checkRead);
+        myLibrary.push(book);
+        addBookToLibrary(title,author,pages,checkRead);
+
         dialog.close();
 
-        const book = new addBookToLibrary(title,author,pages,checkRead);
-        myLibrary.push(book);
     });
 
     formButtonCancel.addEventListener("click",function(e){
