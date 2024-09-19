@@ -114,8 +114,8 @@ newBookButton.addEventListener("click",function(e){
 
         dialog.close();
 
-        
-
+        const book = new addBookToLibrary(title,author,pages,checkRead);
+        myLibrary.push(book);
     });
 
     formButtonCancel.addEventListener("click",function(e){
