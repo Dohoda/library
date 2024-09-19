@@ -117,6 +117,8 @@ button:hover{
     display: grid;
     grid: 1fr 1fr 1fr 1fr 1fr / 1fr;
 
+    position: relative;
+
     font-size: 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
@@ -126,4 +128,18 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cardCancelButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: red;
+    background-color: rgb(144, 245, 211);
+    border: 1px solid black;
+    font-weight: 600;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
