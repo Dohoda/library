@@ -39,6 +39,16 @@ body{
     grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 
+button:hover{
+    opacity: 0.9;
+    border: 2px solid gray;
+}
+
+button:active{
+    opacity: 1;
+    border: 2px solid black;
+}
+
 /* Styling things added by js */
 
 /* dialog and form styles */
@@ -102,11 +112,6 @@ form label + input, input + label {
     right: 5px;
 }
 
-button:hover{
-    opacity: 0.9;
-    border: 2px solid gray;
-}
-
 /* Card styles */
 
 .cardContainer {
@@ -122,6 +127,10 @@ button:hover{
     font-size: 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
+}
+
+.cardContainer:hover{
+    border: 2px solid black;
 }
 
 .cardRow{

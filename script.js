@@ -41,7 +41,6 @@ function addBookToLibrary(title,author,pages,checkRead) {
         else{
             cardRow5.textContent = "The book is read";
         }
-        
     });
 
     cardContainer.appendChild(cardChangeStatusButton);
