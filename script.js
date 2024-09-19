@@ -106,13 +106,15 @@ newBookButton.addEventListener("click",function(e){
         author = inputAuthor.value;
         pages = inputPages.value;
         if(inputCheck.checked == true ){
-            checkRead = true;
+            checkRead = "the book is read.";
         }
         else{
-            checkRead = false;
+            checkRead = "the book is not read.";
         }
 
         dialog.close();
+
+        
 
     });
 
