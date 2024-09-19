@@ -143,3 +143,17 @@ button:hover{
     top: 5px;
     right: 5px;
 }
+
+.cardStatusButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(144, 245, 211);
+    color: green;
+    border: 1px solid black;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

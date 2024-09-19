@@ -25,6 +25,21 @@ function addBookToLibrary(title,author,pages,checkRead) {
 
     cardContainer.appendChild(cardCancelButton);
 
+    const cardChangeStatusButton = document.createElement("button");
+    cardChangeStatusButton.classList.add("cardStatusButton");
+    cardChangeStatusButton.textContent = "C"
+
+    cardChangeStatusButton.addEventListener("click",function(){
+        if(checkRead = true){
+            cardRow5.textContent = "The book is not read";
+        }
+        else{
+            cardRow5.textContent = "The book is read";
+        }
+    });
+
+    cardContainer.appendChild(cardChangeStatusButton);
+
     /* for creating rows to fill with book information */
 
     const cardRow1 = document.createElement("div");
