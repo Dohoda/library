@@ -33,12 +33,15 @@ function addBookToLibrary(title,author,pages,checkRead) {
     cardChangeStatusButton.textContent = "C"
 
     cardChangeStatusButton.addEventListener("click",function(){
-        if(checkRead = true){
+        let status = cardRow5.textContent;
+
+        if(status == "The book is read"){
             cardRow5.textContent = "The book is not read";
         }
         else{
             cardRow5.textContent = "The book is read";
         }
+        
     });
 
     cardContainer.appendChild(cardChangeStatusButton);
@@ -168,10 +171,10 @@ newBookButton.addEventListener("click",function(e){
         author = inputAuthor.value;
         pages = inputPages.value;
         if(inputCheck.checked == true ){
-            checkRead = "the book is read.";
+            checkRead = "The book is read";
         }
         else{
-            checkRead = "the book is not read.";
+            checkRead = "The book is not read";
         }
 
         addBookToLibrary(title,author,pages,checkRead);
