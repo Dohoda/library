@@ -7,6 +7,9 @@ function Book(title,author,pages,checkRead) {
     this.author = author;
     this.pages = pages;
     this.checkRead = checkRead
+
+    const book = new Book(title,author,pages,checkRead);
+    myLibrary.push(book);
 };
 
 function addBookToLibrary(title,author,pages,checkRead) {
@@ -171,8 +174,6 @@ newBookButton.addEventListener("click",function(e){
             checkRead = "the book is not read.";
         }
 
-        const book = new Book(title,author,pages,checkRead);
-        myLibrary.push(book);
         addBookToLibrary(title,author,pages,checkRead);
 
         dialog.close();
