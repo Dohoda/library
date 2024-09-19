@@ -38,6 +38,7 @@ body{
 
 /* Styling things added by js */
 
+/* dialog and form styles */
 
 dialog{
     border: 2px solid rgb(97, 189, 158);
@@ -101,4 +102,25 @@ form label + input, input + label {
 button:hover{
     opacity: 0.9;
     border: 2px solid gray;
+}
+
+/* Card styles */
+
+.cardContainer {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(69, 250, 190);
+    border: 1px solid rgba(255, 166, 0,6);
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr 1fr / 1fr;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.cardRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
