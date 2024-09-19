@@ -11,7 +11,37 @@ function Book(title,author,pages,checkRead) {
 
 function addBookToLibrary(title,author,pages,checkRead) {
 
-    
+    const cardContainer = document.createElement("div");
+    cardContainer.classList.add("cardContainer");
+    container.appendChild(cardContainer);
+
+    /* for creating rows to fill with book information */
+
+    const cardRow1 = document.createElement("div");
+    cardRow1.classList.add("cardRow");
+    cardContainer.appendChild(cardRow1);
+
+    const cardRow2 = document.createElement("div");
+    cardRow2.classList.add("cardRow");
+    cardContainer.appendChild(cardRow2);
+
+    const cardRow3 = document.createElement("div");
+    cardRow3.classList.add("cardRow");
+    cardContainer.appendChild(cardRow3);
+
+    const cardRow4 = document.createElement("div");
+    cardRow4.classList.add("cardRow");
+    cardContainer.appendChild(cardRow4);
+
+    const cardRow5 = document.createElement("div");
+    cardRow5.classList.add("cardRow");
+    cardContainer.appendChild(cardRow5);
+
+    cardRow1.textContent = title;
+    cardRow2.textContent = "by";
+    cardRow3.textContent = author;
+    cardRow4.textContent = pages + " pages";
+    cardRow5.textContent = checkRead;
 
 };
 
