@@ -15,6 +15,16 @@ function addBookToLibrary(title,author,pages,checkRead) {
     cardContainer.classList.add("cardContainer");
     container.appendChild(cardContainer);
 
+    const cardCancelButton = document.createElement("button");
+    cardCancelButton.classList.add("cardCancelButton");
+    cardCancelButton.textContent = "X";
+
+    cardCancelButton.addEventListener("click",function(){
+        cardContainer.remove();
+    });
+
+    cardContainer.appendChild(cardCancelButton);
+
     /* for creating rows to fill with book information */
 
     const cardRow1 = document.createElement("div");
