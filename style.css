@@ -34,6 +34,9 @@ body{
     box-shadow: 3px 3px rgba(128, 128, 128, 0.3);
     border: 1px solid gray;
     margin-top: 1rem;
+
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
 
 /* Styling things added by js */
@@ -107,8 +110,8 @@ button:hover{
 /* Card styles */
 
 .cardContainer {
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
     background-color: rgb(69, 250, 190);
     border: 1px solid rgba(255, 166, 0,6);
     display: grid;
