@@ -2,17 +2,24 @@
 
 const myLibrary = [];
 
-function Book(title,author,pages,checkRead) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.checkRead = checkRead
+class Book{
 
-    const book = new Book(title,author,pages,checkRead);
-    myLibrary.push(book);
-};
+    constructor(title,author,pages,checkRead){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.checkRead = checkRead;
+    }
+   
+    pushLibrary(book){
+        myLibrary.push(book);
+    }
+}
 
 function addBookToLibrary(title,author,pages,checkRead) {
+
+    const book = new Book(title,author,pages,checkRead);
+    book.pushLibrary;
 
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("cardContainer");
